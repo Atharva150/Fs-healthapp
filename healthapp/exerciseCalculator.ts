@@ -84,4 +84,4 @@ catch(error: unknown) {
     console.log(errorMessage);
 }
 
-export default calculateExercises
+export default calculateExercises;

@@ -9,7 +9,12 @@ app.get('/hello', (_req, res) => {
   res.send('Hello Full Stack!');
 });
 
-app.use(express.json())
+app.use(express.json());
+
+interface ExerciseRequest {
+  daily_exercises: unknown;
+  target: unknown;
+}
 
 app.get('/bmi', (req, res) => {
 
@@ -37,11 +42,13 @@ app.get('/bmi', (req, res) => {
 });
 
 app.post('/exercises', (req, res) => {
+    
 
-    const body = req.body;
+    const body = req.body as ExerciseRequest;
 
     if (
-        body.daily_exercises === undefined ||
+            body.daily_exercises === undefined ||
+       
         body.target === undefined
     ) {
         return res.status(400).json({
