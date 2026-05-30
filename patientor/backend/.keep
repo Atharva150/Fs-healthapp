@@ -1,0 +1,5 @@
+
+
+Initialize a backend project in the directory patientor/backend that will work with the frontend. Configure ESLint and tsconfig using the same settings as provided in the material. Define an endpoint that handles HTTP GET requests at the route /api/ping.
+
+The project should be runnable with npm scripts, both in development mode with npm run dev and, in production mode with npm start.
