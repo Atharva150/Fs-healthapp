@@ -12,7 +12,7 @@
     "calculateExercises": "tsc && node exerciseCalculator.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": " concurrently \"tsc --watch \" \"node  --watch index.ts\"",
-    "start": "node index.ts",
+    "start": "tsx index.ts",
     "lint": "eslint ."
   },
   "devDependencies": {
@@ -22,6 +22,7 @@
     "@types/node": "^25.8.0",
     "concurrently": "^10.0.0",
     "eslint": "^10.4.1",
+    "tsx": "^4.22.4",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.60.0"
   },
